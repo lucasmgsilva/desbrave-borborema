@@ -279,13 +279,13 @@ footer {
   nav a:hover {
     text-decoration: none;
   }
-
-  #hero-image {
-    background-position: center;
-  }
 }
 
 @media (max-width: 768px){
+  #hero-image {
+    background-attachment: scroll;
+  }
+
   .pontos-turisticos {
     grid-template-columns: 1fr;
   }
