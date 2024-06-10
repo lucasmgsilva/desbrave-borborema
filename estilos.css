@@ -56,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 p, a, strong {
@@ -68,6 +69,12 @@ p, a, strong {
   margin: 0 auto;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -151,6 +158,7 @@ nav a:hover {
 main.container {
   padding-top: 2.5rem;
   padding-bottom: 5rem;
+  flex: 1;
 }
 
 main.container h2 {
@@ -215,17 +223,33 @@ main.container h2 {
   transition: 0.1s;
 }
 
-.ponto-turistico-detalhado img {
-  max-width: 36rem;
-  height: auto;
-  object-fit: auto;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-  padding: 1.5rem;
+.ponto-turistico-detalhado {
+  box-shadow: initial;
+  background-color: initial;
+  border: 0;
+}
+
+.ponto-turistico-detalhado picture {
+  max-width: 32rem;
   padding-bottom: 0;
 }
 
+.ponto-turistico-detalhado picture img {
+  height: 34rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  float: left;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.ponto-turistico-detalhado div {
+  padding: 0;
+  margin-top: 1rem;
+}
+
 .ponto-turistico-detalhado p {
+  text-align: justify;
   margin-bottom: 1rem;
   initial-letter: 2rem;
 }
@@ -238,20 +262,37 @@ footer {
   padding-bottom: 2rem;
 }
 
-@media (max-width: 425px) {
-  header div.container {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 1100px) {
   .pontos-turisticos {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ponto-turistico-detalhado picture {
+    margin: 0 auto;
+  }
+
+  .ponto-turistico-detalhado picture img {
+    float: none;
+    height: 18rem;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+  }
+
+  #hero-image {
+    background-position: center;
   }
 }
 
 @media (max-width: 768px){
   .pontos-turisticos {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  header div.container {
+    flex-direction: column;
   }
 }
