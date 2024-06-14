@@ -255,7 +255,8 @@ main.container h2 {
   margin-bottom: 2rem;
 }
 
-.ponto-turistico a, .caminhos-do-tiete a {
+.ponto-turistico a,
+.caminhos-do-tiete a {
   display: block;
   background-color: #000;
   color: #FFF;
@@ -310,6 +311,12 @@ main.container h2 {
   text-align: justify;
   margin-bottom: 1rem;
   initial-letter: 2rem;
+}
+
+iframe {
+  border-radius: 1rem;
+  width: 100%;
+  height: 24rem;
 }
 
 footer {
