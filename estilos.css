@@ -314,6 +314,7 @@ main.container h2 {
 }
 
 iframe {
+  border: 1px solid #E5E7EB;
   border-radius: 1rem;
   width: 100%;
   height: 24rem;
