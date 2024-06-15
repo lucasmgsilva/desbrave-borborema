@@ -358,21 +358,25 @@ section.apoiadores {
   gap: 2rem;
 }
 
-.apoiadores .glide__slides {
+.apoiadores .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.apoiadores .swiper-wrapper {
   display: flex;
   align-items: center;
+}
+
+.apoiadores .swiper-slide {
+  display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-.apoiadores .glide__slide {
-  padding: 0.5rem 0.5rem;
-  flex: 1;
-}
-
-.apoiadores .glide__slide img {
+.apoiadores .swiper img {
   max-height: 10rem;
-  margin: 0 auto;
 }
 
 iframe {
