@@ -465,10 +465,6 @@ footer div.container {
     font-size: 2.5rem;
   }
 
-  header div.container {
-    flex-direction: column;
-  }
-
   .ponto-turistico img {
     height: 14rem;
   }
@@ -478,4 +474,8 @@ footer div.container {
   }
 }
 
-@media (max-width: 350px) {}
+@media (max-width: 350px) {
+  header div.container {
+    flex-direction: column;
+  }
+}
