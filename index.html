@@ -10,11 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital©,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
+    <script src="https://unpkg.com/@glidejs/glide@3.6.1/dist/glide.min.js"></script>
 
     <link rel="icon" href="./favicon.png">
     <link rel="stylesheet" href="estilos.css">
@@ -167,18 +170,107 @@
         </div>
 
         <div data-aos="fade-up" data-aos-delay="250">
-            <h2>Apoiadores</h2>
-            <!-- <section class="pontos-turisticos">
-                <article class="ponto-turistico">
-                    <img src="imagens/igreja-matriz.jpg" alt="Igreja Matriz">
-
-                    <div>
-                        <h3>Igreja Matriz</h3>
-                        <p>A Igreja Matriz São Sebastião de Borborema é o principal componente da Praça da Matriz.</p>
-                        <a href="pontos-turisticos/igreja-matriz.html">Saiba Mais</a>
+            <h2>Nossos Apoiadores</h2>
+            <section class="apoiadores">
+                <div class="glide1">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/01-espaço-deck.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/02-gremio-novorizontino.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/03-restaurante-da-prainha.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/05-auto-mecânica-e-peças-gavioli.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/06-heartland.png">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-            </section> -->
+                </div>
+                <div class="glide2">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/07-construmarques.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/08-pastelaria-ponto-de-encontro.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/09-seu-banco.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/10-lb-seguros.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/11-cob.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/12-studio-lua-fotografias.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="glide3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/12-ótica-studio-lua.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/13-dcult.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/14-chacará-do-anésio.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/15-j-martin.png">
+                                </a>
+                            </li>
+                            <li class="glide__slide">
+                                <a href="">
+                                    <img src="imagens/apoiadores/16-br-energia-solar-e-materiais-elétricos.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -192,6 +284,34 @@
 
 <script>
     AOS.init();
+
+    const glideSettings = {
+        type: 'carousel',
+        startAt: 0,
+        perView: 4,
+        breakpoints: {
+            1100: {
+                perView: 3
+            },
+            768: {
+                perView: 2,
+            }
+        },
+        keyboard: false, // Enable keyboard navigation
+        autoplay: 3000,
+        hoverpause: false, // Pause autoplay on hover
+        swipeThreshold: false,
+        dragThreshold: false
+    }
+
+    const glide1 = new Glide('.glide1', glideSettings).mount();
+
+    const glide2 = new Glide('.glide2', {
+        ...glideSettings,
+        direction: 'rtl',
+    }).mount();
+
+    const glide3 = new Glide('.glide3', glideSettings).mount();
 </script>
 
 </html>
