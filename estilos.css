@@ -171,7 +171,7 @@ nav a:hover {
 }
 
 #hero-image {
-  height: 36rem;
+  height: 40rem;
   background-image: url("imagens/borborema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +180,7 @@ nav a:hover {
 }
 
 #hero-content {
-  height: 36rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
