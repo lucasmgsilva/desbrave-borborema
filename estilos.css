@@ -211,6 +211,12 @@ main.container {
   flex: 1;
 }
 
+main.container.sobre {
+  gap: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 main.container h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -308,15 +314,17 @@ main.container h2 {
 .ponto-turistico-detalhado picture {
   max-width: 32rem;
   padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ponto-turistico-detalhado picture img {
   height: 34rem;
   object-fit: cover;
   border-radius: 0.5rem;
-  float: left;
   margin-right: 1rem;
   margin-top: 1rem;
+
 }
 
 .sobre-imagens {
@@ -374,7 +382,6 @@ footer div.container {
   }
 
   .ponto-turistico-detalhado picture img {
-    float: none;
     height: 24rem;
   }
 
@@ -392,6 +399,12 @@ footer div.container {
     gap: 4rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  main.container.sobre {
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .caminhos-do-tiete img {
