@@ -329,9 +329,15 @@
     }
 
     window.onload = () => {
-        swiperAutoplayStart()
         window.addEventListener("focus", swiperAutoplayStart);
         window.addEventListener("blur", swiperAutoplayStop);
+        document.addEventListener("visibilitychange", () => {
+            if (document.visibilityState === "visible") {
+                swiperAutoplayStart();
+            } else {
+                swiperAutoplayStop();
+            }
+        });
     }
 </script>
 
