@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="icon" href="./favicon.png">
     <link rel="stylesheet" href="estilos.css">
     <title>Desbrave Borborema - Sobre</title>
@@ -22,8 +25,10 @@
     <header>
         <div class="container">
             <div>
-                <img id="isotipo" src="./isotipo.png" alt="Isotipo Desbrave Borborema">
-                <h1>Desbrave Borborema</h1>
+                <a href="/">
+                    <img id="isotipo" src="./isotipo.png" alt="Isotipo Desbrave Borborema">
+                    <h1>Desbrave Borborema</h1>
+                </a>
             </div>
             <nav>
                 <a href="/">Início</a>
@@ -37,10 +42,12 @@
             <section>
                 <article class="ponto-turistico ponto-turistico-detalhado">
                     <div class="sobre-imagens">
-                        <img src="./imagens/alunos.jpg" alt="Alunos Desenvolvimento de Sistemas">
+                        <img src="./imagens/alunos.jpg" alt="Alunos Desenvolvimento de Sistemas" data-aos="flip-right"
+                            data-aos-delay="250">
                         <span>Prof. Lucas e Prof. Emerson com os alunos do curso de Desenvolvimento de Sistemas.</span>
-                        <img src="./imagens/turismo.jpg" alt="Alunos Turismo">
-                        <span>Prof. Hélio, Prof. Luciano e Prof. Renato com os alunos do curso de Turismo Receptivo.</span>
+                        <img src="./imagens/turismo.jpg" alt="Alunos Turismo" data-aos="flip-left" data-aos-delay="250">
+                        <span>Prof. Hélio, Prof. Luciano e Prof. Renato com os alunos do curso de Turismo
+                            Receptivo.</span>
                     </div>
                     <div>
                         <p>Bem-vindo ao Desbrave Borborema, sua porta de entrada para explorar as maravilhas e encantos

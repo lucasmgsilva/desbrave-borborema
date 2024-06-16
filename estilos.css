@@ -129,12 +129,14 @@ header div.container {
   gap: 0.5rem;
 }
 
-header div.container>div {
+header div.container>div a {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
 }
 
 #isotipo {
