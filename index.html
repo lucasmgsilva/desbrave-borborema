@@ -329,6 +329,7 @@
     }
 
     window.onload = () => {
+        swiperAutoplayStart()
         window.addEventListener("focus", swiperAutoplayStart);
         window.addEventListener("blur", swiperAutoplayStop);
     }
