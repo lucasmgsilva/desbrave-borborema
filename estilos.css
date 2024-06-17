@@ -462,6 +462,9 @@ footer div.container {
   /* header div.container>div h1 {
     display: none;
   } */
+   #isotipo {
+    display: none;
+   }
 
   header {
     padding-top: 0.5rem;
