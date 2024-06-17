@@ -241,7 +241,6 @@ main.container h2 {
   height: max-content;
 }
 
-
 .pontos-turisticos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -300,8 +299,11 @@ main.container h2 {
 }
 
 .caminhos-do-tiete a {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ponto-turistico a:hover,
