@@ -204,6 +204,11 @@ nav a:hover {
   font-size: 3rem;
 }
 
+.isotipo-flutuante {
+  margin-top: 1.5rem;
+  height: 7rem;
+}
+
 main.container {
   display: flex;
   flex-direction: column;
@@ -242,7 +247,6 @@ main.container h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-
 
 .ponto-turistico {
   width: 100%;
@@ -327,7 +331,6 @@ main.container h2 {
   border-radius: 0.5rem;
   margin-right: 1rem;
   margin-top: 1rem;
-
 }
 
 .sobre-imagens {
@@ -454,12 +457,25 @@ footer div.container {
 }
 
 @media (max-width: 540px) {
-  header div.container>div h1 {
+  /* header div.container>div h1 {
     display: none;
+  } */
+
+  header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  header div.container {
+    flex-direction: column;
   }
 
   #hero-content h2 {
     font-size: 2.5rem;
+  }
+
+  .isotipo-flutuante {
+    height: 6rem;
   }
 
   .pontos-turisticos {
@@ -475,8 +491,4 @@ footer div.container {
   }
 }
 
-@media (max-width: 350px) {
-  header div.container {
-    flex-direction: column;
-  }
-}
+@media (max-width: 350px) {}
