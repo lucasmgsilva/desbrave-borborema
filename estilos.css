@@ -84,6 +84,7 @@ h4,
 h5,
 h6 {
   font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold !important;
 }
 
 h1 {
@@ -113,7 +114,7 @@ header {
   padding-bottom: 1rem;
 }
 
-.container {
+.box-container {
   width: 100%;
   max-width: 1130px;
   margin: 0 auto;
@@ -121,7 +122,7 @@ header {
   padding-right: 0.75rem;
 }
 
-header div.container {
+header div.box-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -129,7 +130,7 @@ header div.container {
   gap: 0.5rem;
 }
 
-header div.container>div a {
+header div.box-container>div a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -209,7 +210,7 @@ nav a:hover {
   height: 7rem;
 }
 
-main.container {
+main.box-container {
   display: flex;
   flex-direction: column;
   gap: 8rem;
@@ -218,13 +219,13 @@ main.container {
   flex: 1;
 }
 
-main.container.sobre {
+main.box-container.sobre {
   gap: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-main.container h2 {
+main.box-container h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -386,7 +387,7 @@ section.apoiadores {
   max-height: 10rem;
 }
 
-iframe {
+iframe.mapa {
   border: 1px solid #E5E7EB;
   border-radius: 1rem;
   width: 100%;
@@ -401,7 +402,7 @@ footer {
   padding-bottom: 2rem;
 }
 
-footer div.container {
+footer div.box-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -426,13 +427,13 @@ footer div.container {
     background-attachment: scroll;
   }
 
-  main.container {
+  main.box-container {
     gap: 4rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
-  main.container.sobre {
+  main.box-container.sobre {
     gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -449,7 +450,7 @@ footer div.container {
     margin-right: auto;
   }
 
-  main.container h2 {
+  main.box-container h2 {
     text-align: center;
   }
 
@@ -459,7 +460,7 @@ footer div.container {
 }
 
 @media (max-width: 540px) {
-  /* header div.container>div h1 {
+  /* header div.box-container>div h1 {
     display: none;
   } */
    #isotipo {
@@ -471,7 +472,7 @@ footer div.container {
     padding-bottom: 0.5rem;
   }
 
-  header div.container {
+  header div.box-container {
     flex-direction: column;
   }
 
